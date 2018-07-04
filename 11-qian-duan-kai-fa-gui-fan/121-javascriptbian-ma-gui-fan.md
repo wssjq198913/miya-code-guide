@@ -174,4 +174,7 @@ function foo(name, options, args) {
 }
 ```
 
-* 
+* 在方法体内不允许使用arguments，用rest syntax替代。
+
+
+
