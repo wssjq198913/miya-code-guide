@@ -156,5 +156,7 @@ function sayHi(name) {
 }
 ```
 
+* 代码中不允许使用eval\(\)。
+* 
 
 
