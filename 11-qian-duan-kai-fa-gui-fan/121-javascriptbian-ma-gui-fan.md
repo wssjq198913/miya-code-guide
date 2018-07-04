@@ -232,7 +232,10 @@ function f4(a = 1) {
 
 ```js
 // bad
-const biggest = Math.max.call.apply(null, [1,2,3,4,5]);
+const maximum = Math.max.apply(null, [1,2,3,4,5]);
+
+// good
+const maximum = Math.max(...[1,2,3,4,5]);
 ```
 
 
