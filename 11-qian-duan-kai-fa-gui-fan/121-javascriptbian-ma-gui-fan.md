@@ -10,6 +10,7 @@ const name = "david";
 const obj = {
     name: name,
 }
+
 // good
 const name = "david";
 const obj = {
