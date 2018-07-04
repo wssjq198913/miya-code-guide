@@ -129,5 +129,8 @@ const second = arr[1];
 const [first, second] = arr;
 ```
 
+### String
+
+* 
 
 
