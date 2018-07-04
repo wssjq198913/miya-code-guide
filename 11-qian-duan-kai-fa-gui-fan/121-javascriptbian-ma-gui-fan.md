@@ -273,5 +273,7 @@ import { es6 } from './styleGuide';
 export default es6;
 ```
 
+* 不能重复加载同一个文件。
+
 
 
