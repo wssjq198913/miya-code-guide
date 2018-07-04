@@ -176,7 +176,16 @@ function foo(name, options, args) {
 
 * 在方法体内不允许使用arguments，用rest syntax替代。
 
-```
+```js
+// bad
+function concatenateAll() {
+  const args = Array.prototype.slice.call(arguments);
+  return args.join('');
+}
 
+// good
+function concatenateAll(...args) {
+  return args.join('');
+}
 ```
 
