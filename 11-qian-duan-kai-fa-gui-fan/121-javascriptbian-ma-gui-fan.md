@@ -64,4 +64,11 @@ const nodes = Array.from(foo);
 const nodes = [...foo];
 ```
 
-* 
+* 如果数组中有多行，在前括号后和后括号前都需要换行。
+
+```
+
+```
+
+
+
