@@ -66,8 +66,22 @@ const nodes = [...foo];
 
 * 如果数组中有多行，在前括号后和后括号前都需要换行。
 
-```
-
+```js
+// bad
+const objectInArray = [{
+  id: 1,
+}, {
+  id: 2,
+}];
+// good
+const objectInArray = [
+  {
+    id: 1,
+  },
+  {
+    id: 2,
+  },
+];
 ```
 
 
