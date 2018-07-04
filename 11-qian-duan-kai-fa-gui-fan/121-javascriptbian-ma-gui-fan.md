@@ -116,4 +116,7 @@ function getFullName({ firstName, lastName }) {
 }
 ```
 
-* 
+* 数组中尽量通过解构获得item。
+
+
+
