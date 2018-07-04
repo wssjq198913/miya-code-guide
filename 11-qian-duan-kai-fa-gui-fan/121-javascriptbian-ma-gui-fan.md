@@ -297,6 +297,12 @@ export { foo };
 ```
 
 * 如果只有一个export导出，使用export default。
+```js
+// bad
+export function foo() {}
 
+// good
+export default function foo() {}
+```
 
 
