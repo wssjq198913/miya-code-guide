@@ -132,6 +132,7 @@ const [first, second] = arr;
 ### String
 
 * 用单引号包裹string。
+* 用ES6 template合并字符串。
 
 
 
