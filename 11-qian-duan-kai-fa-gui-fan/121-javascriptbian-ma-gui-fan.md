@@ -284,3 +284,11 @@ import { named1, named2 } from 'foo';
 import foo, { named1, named2 } from 'foo';
 ```
 
+* export的变量必须是const，不能是let。
+
+```
+
+```
+
+
+
