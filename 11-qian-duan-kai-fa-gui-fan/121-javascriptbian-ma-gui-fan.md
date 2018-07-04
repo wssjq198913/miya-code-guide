@@ -4,9 +4,11 @@
 
 1. var/let/const
 
-        why? var没有块级作用域，容易引起难以注意的bug.
+   ```
+    why? var没有块级作用域，容易引起难以注意的bug.
+   ```
 
-```
+```js
 // bad
 var a = 1;
 var b = 2;
@@ -18,7 +20,7 @@ const b = 2;
 
 ### 
 
-```
+```js
 // bad
 var count = 1;
 if (true) {
