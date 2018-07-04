@@ -238,9 +238,9 @@ const maximum = Math.max.apply(null, [1,2,3,4,5]);
 const maximum = Math.max(...[1,2,3,4,5]);
 ```
 
-* 避免使用普通函数，尽量使用箭头函数。
+* 尽量避免使用普通函数，并使用箭头函数。
 
-why
+why？箭头函数可以保留外层this，代码更加简洁。
 
 ```js
 // bad
