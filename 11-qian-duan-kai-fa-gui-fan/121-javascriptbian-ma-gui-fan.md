@@ -306,4 +306,30 @@ export function foo() {}
 export default function foo() {}
 ```
 
+* 将所有的import放到文件最上面。
+
+```js
+// bad
+import foo from 'foo';
+foo.init();
+
+import bar from 'bar';
+
+// good
+import foo from 'foo';
+import bar from 'bar';
+
+foo.init();
+```
+* 加载node_module的import放到加载本地文件的import上面。
+
+```js
+// bad
+import config from './config';
+import path from 'path';
+
+// good
+import path from 'path';
+import config from './config';
+```
 
