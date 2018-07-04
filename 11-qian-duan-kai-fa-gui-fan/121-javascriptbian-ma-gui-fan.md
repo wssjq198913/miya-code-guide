@@ -43,5 +43,8 @@ console.log(object.hasOwnProperty(key));
 console.log(Object.prototype.hasOwnProperty.call(obj, key));
 ```
 
+### Array
+
+* 
 
 
