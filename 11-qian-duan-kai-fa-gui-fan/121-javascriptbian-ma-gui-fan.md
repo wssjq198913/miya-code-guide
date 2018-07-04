@@ -238,7 +238,7 @@ const maximum = Math.max.apply(null, [1,2,3,4,5]);
 const maximum = Math.max(...[1,2,3,4,5]);
 ```
 
-* 使用剪头函数。
+* 使用箭头函数。
 
 
 
