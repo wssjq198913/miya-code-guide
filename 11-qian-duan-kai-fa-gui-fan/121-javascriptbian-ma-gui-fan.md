@@ -162,7 +162,7 @@ function sayHi(name) {
 
 * function的参数名不能是arguments，它会覆盖function本身的arguments造成意想不到的后果。
 
-```
+```js
 
 ```
 
