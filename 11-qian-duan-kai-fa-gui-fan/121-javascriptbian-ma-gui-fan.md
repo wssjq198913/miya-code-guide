@@ -34,7 +34,7 @@ const obj = {
 
   why? 一个对象有可能通过Object.create\(null\)生成，这样的对象中不含有Object的原型方法。
 
-```
+```js
 // bad
 console.log(object.hasOwnProperty(key));
 // good
