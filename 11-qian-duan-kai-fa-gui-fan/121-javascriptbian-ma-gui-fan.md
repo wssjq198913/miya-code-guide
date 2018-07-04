@@ -118,8 +118,15 @@ function getFullName({ firstName, lastName }) {
 
 * 数组中尽量通过解构获得item。
 
-```
+```js
+const arr = [1, 2, 3, 4];
 
+// bad
+const first = arr[0];
+const second = arr[1];
+
+// good
+const [first, second] = arr;
 ```
 
 
