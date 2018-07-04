@@ -241,7 +241,17 @@ const maximum = Math.max(...[1,2,3,4,5]);
 * 使用箭头函数。
 
 ```js
+// bad
+[1, 2, 3].map(function (x) {
+  const y = x + 1;
+  return x * y;
+});x
 
+// good
+[1, 2, 3].map(x => {
+  const y = x + 1;
+  return x * y;
+});
 ```
 
 
