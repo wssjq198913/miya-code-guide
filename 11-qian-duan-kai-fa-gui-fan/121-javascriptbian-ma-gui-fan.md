@@ -191,5 +191,9 @@ function concatenateAll(...args) {
 
 * 永远把有默认值的参数放到最后。
 
+```js
+
+```
+
 
 
