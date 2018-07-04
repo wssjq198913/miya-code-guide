@@ -286,8 +286,14 @@ import foo, { named1, named2 } from 'foo';
 
 * export的变量必须是const，不能是let。
 
-```
+```js
+// bad
+let foo = 3;
+export { foo };
 
+// good
+const foo = 3;
+export { foo };
 ```
 
 
