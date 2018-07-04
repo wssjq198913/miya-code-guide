@@ -262,7 +262,7 @@ const maximum = Math.max(...[1,2,3,4,5]);
 
 * 不要export连写from。
 
-```
+```js
 
 ```
 
