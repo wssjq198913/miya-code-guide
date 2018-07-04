@@ -93,7 +93,7 @@ const objectInArray = [
 
 ### ES6解构
 
-* 使用ES6解构
+* 使用ES6解构取得对象中的属性。
 
 
 
