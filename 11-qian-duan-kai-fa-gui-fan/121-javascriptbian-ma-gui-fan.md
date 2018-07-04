@@ -45,6 +45,12 @@ console.log(Object.prototype.hasOwnProperty.call(obj, key));
 
 ### Array
 
-* 
+* 使用ES6扩展操作符做浅拷贝。
+
+```js
+// good
+const itemsCopy = [...items];
+```
+
 
 
