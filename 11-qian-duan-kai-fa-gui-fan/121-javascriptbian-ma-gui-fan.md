@@ -2,9 +2,9 @@
 
 ## 该规范基于airbnb
 
-1. var/let/const
+* var/let/const
 
-2. why? var没有块级作用域，容易引起难以注意的bug.
+* why? var没有块级作用域，容易引起难以注意的bug.
 
 ```
 // bad
