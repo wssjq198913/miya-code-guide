@@ -17,5 +17,15 @@ const obj = {
 
 * 不要用引号包裹object属性名称除非属性名称含有特殊标识符。
 
+```js
+// bad
+const obj = {
+    'age': 10,
+    'data-blash': 1,
+}
+// good
+
+```
+
 
 
