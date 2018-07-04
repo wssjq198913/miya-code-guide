@@ -4,7 +4,3 @@
 
 ## 基础规范
 
-## xx
-
-* [Introduction](README.md)
-
