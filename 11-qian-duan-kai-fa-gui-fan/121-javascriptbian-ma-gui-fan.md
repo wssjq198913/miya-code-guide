@@ -30,5 +30,9 @@ const obj = {
 }
 ```
 
+* 不要直接调用Object.prototype中的方法，如hasOwnProperty, isPrototypeOf等
+
+    why? 一个对象有可能通过Object.create\(null\)生成，这样的对象中不含有Object的原型方法。
+
 
 
