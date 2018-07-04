@@ -131,6 +131,7 @@ const [first, second] = arr;
 
 ### String
 
-* 
+* 用单引号包裹string。
+
 
 
