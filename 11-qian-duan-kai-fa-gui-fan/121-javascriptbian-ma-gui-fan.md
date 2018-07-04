@@ -135,7 +135,25 @@ const [first, second] = arr;
 * 用ES6 template合并字符串。
 
 ```js
+// bad
+function sayHi(name) {
+  return 'How are you, ' + name + '?';
+}
 
+// bad
+function sayHi(name) {
+  return ['How are you, ', name, '?'].join();
+}
+
+// bad
+function sayHi(name) {
+  return `How are you, ${ name }?`;
+}
+
+// good
+function sayHi(name) {
+  return `How are you, ${name}?`;
+}
 ```
 
 
