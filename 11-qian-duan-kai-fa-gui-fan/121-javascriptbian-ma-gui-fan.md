@@ -39,6 +39,7 @@ const obj = {
 ```js
 // bad
 console.log(object.hasOwnProperty(key));
+
 // good
 console.log(Object.prototype.hasOwnProperty.call(obj, key));
 ```
