@@ -54,8 +54,12 @@ const itemsCopy = [...items];
 
 * 对于array-like的对象，通过ES6扩展符将它转化为数组。
 
-```
-
+```js
+const foo = document.querySelectorAll('.foo');
+// good
+const nodes = Array.from(foo);
+// best
+const nodes = [...foo];
 ```
 
 
