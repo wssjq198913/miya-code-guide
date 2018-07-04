@@ -56,6 +56,8 @@ const itemsCopy = [...items];
 
 ```js
 const foo = document.querySelectorAll('.foo');
+// bad
+const nodes = Array.prototype.slice.call(foo);
 // good
 const nodes = Array.from(foo);
 // best
