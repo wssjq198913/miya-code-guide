@@ -1,5 +1,5 @@
 * #### 杜绝使用var，用const和let替代
-* #### object字面量简写
+* #### object字面量请简写
 
 ```js
 // bad
