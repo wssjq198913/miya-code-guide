@@ -3,8 +3,7 @@
 该规范基于airbnb
 
 1. ### var/let/const
-
-* ### why? var没有块级作用域，容易引起难以注意的bug.
+2. ### why? var没有块级作用域，容易引起难以注意的bug.
 
 ```
 // bad
@@ -24,7 +23,6 @@ var count = 1;
 if (true) {
     count += 1;
 }
-
 // good
 let count = 1;
 if (true) {
