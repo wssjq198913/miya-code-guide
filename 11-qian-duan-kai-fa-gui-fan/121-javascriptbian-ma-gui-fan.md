@@ -258,4 +258,9 @@ const maximum = Math.max(...[1,2,3,4,5]);
 
 ### Modules
 
-* 
+* 使用import加载模块，不要使用require\(\)。
+
+* 不要export连写from。
+
+
+
