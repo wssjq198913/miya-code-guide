@@ -73,6 +73,7 @@ const objectInArray = [{
 }, {
   id: 2,
 }];
+
 // good
 const objectInArray = [
   {
