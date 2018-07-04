@@ -32,18 +32,13 @@ const obj = {
 
 * 不要直接调用Object.prototype中的方法，如hasOwnProperty, isPrototypeOf等
 
-    why? 一个对象有可能通过Object.create\(null\)生成，这样的对象中不含有Object的原型方法。
-```js
+  why? 一个对象有可能通过Object.create\(null\)生成，这样的对象中不含有Object的原型方法。
+
+```
 // bad
-const obj = {
-    'age': 10,
-    'data-blah': 1,
-}
+console.log(object.hasOwnProperty(key));
 // good
-const obj = {
-    age: 10,
-    'data-blah': 1,
-}
+console.log(Object.prototype.hasOwnProperty.call(obj, key));
 ```
 
 
