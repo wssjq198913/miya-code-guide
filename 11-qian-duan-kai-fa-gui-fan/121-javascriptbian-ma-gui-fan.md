@@ -52,5 +52,11 @@ console.log(Object.prototype.hasOwnProperty.call(obj, key));
 const itemsCopy = [...items];
 ```
 
+* 对于array-like的对象，通过ES6扩展符将它转化为数组。
+
+```
+
+```
+
 
 
