@@ -263,7 +263,14 @@ const maximum = Math.max(...[1,2,3,4,5]);
 * 不要export连写from。
 
 ```js
+// bad
+// filename es6.js
+export { es6 as default } from './styleGuide';
 
+// good
+// filename es6.js
+import { es6 } from './styleGuide';
+export default es6;
 ```
 
 
