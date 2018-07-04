@@ -203,5 +203,4 @@ function handleThings(name, opts = {}) {
 }
 ```
 
-
-
+* 
