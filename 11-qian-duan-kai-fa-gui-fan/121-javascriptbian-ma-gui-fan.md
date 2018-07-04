@@ -275,7 +275,12 @@ export default es6;
 
 * 不能重复加载同一个文件。
 
-```
+```js
+// bad
+import foo from 'foo';
+import { named1, named2 } from 'foo';
 
+// good
+import foo, { named1, named2 } from 'foo';
 ```
 
