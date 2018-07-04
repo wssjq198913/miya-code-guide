@@ -174,5 +174,4 @@ function foo(name, options, args) {
 }
 ```
 
-
-
+* 
