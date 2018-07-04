@@ -230,5 +230,10 @@ function f4(a = 1) {
 
 * 优先使用ES6扩展符调用多个参数。
 
+```js
+// bad
+const biggest = Math.max.call.apply(null, [1,2,3,4,5]);
+```
+
 
 
