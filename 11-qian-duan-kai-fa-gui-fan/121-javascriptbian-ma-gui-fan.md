@@ -321,7 +321,8 @@ import bar from 'bar';
 
 foo.init();
 ```
-* 加载node_module的import放到加载本地文件的import上面。
+
+* 加载node\_module的import放到加载本地文件的import上面。
 
 ```js
 // bad
@@ -332,4 +333,6 @@ import path from 'path';
 import path from 'path';
 import config from './config';
 ```
+
+
 
