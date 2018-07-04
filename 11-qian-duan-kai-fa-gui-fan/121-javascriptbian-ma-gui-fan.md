@@ -25,6 +25,7 @@ const obj = {
     'age': 10,
     'data-blah': 1,
 }
+
 // good
 const obj = {
     age: 10,
