@@ -21,10 +21,13 @@ const obj = {
 // bad
 const obj = {
     'age': 10,
-    'data-blash': 1,
+    'data-blah': 1,
 }
 // good
-
+const obj = {
+    age: 10,
+    'data-blah': 1,
+}
 ```
 
 
