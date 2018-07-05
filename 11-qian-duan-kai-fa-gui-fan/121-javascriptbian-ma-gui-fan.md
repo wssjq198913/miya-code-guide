@@ -1,6 +1,15 @@
 ### 变量
 
+* 永远使用const后者let来生命变量，不能用var。
 
+```js
+// bad
+superPower = new SuperPower();
+var superPower = new SuperPower();
+
+// good
+const superPower = new SuperPower();
+```
 ### Object
 
 * object字面量简写
