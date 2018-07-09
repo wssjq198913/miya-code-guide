@@ -164,6 +164,41 @@ div.error {}
 }
 ```
 
+* 规则按照位置，display/盒模型，颜色，文字，其它的顺序排列，具体如下。
+
+```css
+.good {
+  /* Positioning */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  /* Display & Box Model */
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 10px solid #333;
+  margin: 10px;
+
+  /* Color */
+  background: #000;
+  color: #fff
+  
+  /* Text */
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: right;
+
+  /* Other */
+  cursor: pointer;
+}
+```
+
 * 长度如果为0，则省略单位。
 
 ```css
@@ -192,6 +227,8 @@ div.error {}
   font-size: .5rem;
 }
 ```
+
+
 
 
 
