@@ -34,14 +34,14 @@ color: red;
 ```css
 // bad
 .one, .two, .three {
-  //
+  // ...
 }
 
 // good
 .one,
 .two,
 .three {
-  //
+  // ...
 }
 ```
 
