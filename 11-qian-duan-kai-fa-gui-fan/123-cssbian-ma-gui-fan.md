@@ -105,6 +105,51 @@ color: red;
 }
 ```
 
+* css的命名在有语义的基础上越简洁越好。
+
+```css
+// bad
+.navigation {}
+.atr {}
+
+// good
+.nav {}
+.author {}
+```
+
+* 避免在id或者class前面使用type选择器, 这会引起性能问题。
+
+```css
+// bad
+ul#example {}
+div.error {}
+
+// good
+#example {}
+.error {}
+```
+
+* 使用css简写属性。
+
+```css
+// bad
+.bad {
+  font-family: palatino, georgia, serif;
+  font-size: 100%;
+  line-height: 1.6;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+}
+
+// good
+.good {
+  font: 100%/1.6 palatino, georgia, serif;
+  padding: 0 1em 2em;
+}
+```
+
 * 没有border，不要使用none，应该用0.
 
 ```css
