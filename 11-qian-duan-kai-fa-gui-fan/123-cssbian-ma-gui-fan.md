@@ -12,6 +12,18 @@ color: red;
 }
 ```
 
+* 所有属性值后面都需要用分号结尾。
+
+```css
+.one {
+  color: red
+}
+
+.one {
+  color: red;
+}
+```
+
 * class命名使用"-"， 不要使用驼峰或下划线。
 
 ```css
@@ -92,6 +104,19 @@ color: red;
   // ...
 }
 ```
+
+* 没有border，不要使用none，应该用0.
+
+```css
+// bad
+.one {
+  border: none; 
+}
+
+// good
+.one {
+  border: 0;
+}
 
 
 
