@@ -164,5 +164,34 @@ div.error {}
 }
 ```
 
+* 长度如果为0，则省略单位。
+
+```css
+// bad
+.bad {
+  margin: 0px;
+  padding: 0px;
+}
+
+// good
+.good {
+  margin: 0;
+  padding: 0;
+}
+```
+
+* 长度为零点几的时候，省略0。
+```css
+// bad
+.bad {
+  font-size: 0.5rem;
+}
+
+// good
+.good {
+  font-size: .5rem;
+}
+```
+
 
 
