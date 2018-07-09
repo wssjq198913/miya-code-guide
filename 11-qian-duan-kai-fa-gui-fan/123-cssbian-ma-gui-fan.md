@@ -11,7 +11,22 @@ color: red;
   color: red;
 }
 ```
-* class命名使用"-"， 不要使用驼峰。
+* class命名使用"-"， 不要使用驼峰或下划线。
+
+```css
+// bad
+.myBook {
+  color: red;
+}
+.my_book {
+  color: red;
+}
+
+// good
+.my-book {
+  color: red;
+}
+```
 * 如过多个class共享同一个css规则，每一个class单独占一行。
 * "{"前面必须要有一个空格。
 * "}"必须单独占一行。
