@@ -29,10 +29,12 @@ color: red;
 * 所有属性值后面都需要用分号结尾。
 
 ```css
+// bad
 .one {
   color: red
 }
 
+// good
 .one {
   color: red;
 }
