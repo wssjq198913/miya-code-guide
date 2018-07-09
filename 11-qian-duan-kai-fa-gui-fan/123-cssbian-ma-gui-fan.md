@@ -12,6 +12,19 @@ color: red;
 }
 ```
 
+* 冒号后面需要一个空格。
+```css
+// bad
+.one {
+  color:red;
+}
+
+// good
+.one {
+  color: red;
+}
+```
+
 * 所有属性值后面都需要用分号结尾。
 
 ```css
@@ -57,7 +70,7 @@ color: red;
 }
 ```
 
-* "{"前面必须要有一个空格。
+* "{"跟在选择器后面，而且它前面必须要有一个空格。
 
 ```css
 // bad
@@ -226,6 +239,24 @@ div.error {}
 // good
 .good {
   font-size: .5rem;
+}
+```
+
+* css规则中使用单引号，url()里面不加引号。
+
+```css
+// bad
+@import url("https://www.google.com/css/maia.css");
+
+html {
+  font-family: "open sans", arial, sans-serif;
+}
+
+// good
+@import url(https://www.google.com/css/maia.css);
+
+html {
+  font-family: 'open sans', arial, sans-serif;
 }
 ```
 
