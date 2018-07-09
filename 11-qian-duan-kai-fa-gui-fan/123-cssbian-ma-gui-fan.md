@@ -260,6 +260,35 @@ html {
 }
 ```
 
+* 无论css还是scss，嵌套都不能超过3层。
+
+```css
+// bad
+.one .two .three .four {}
+
+// good
+.one .two .three {}
+```
+
+```css
+// bad
+.one {
+  .two {
+    .three {
+      .four {}
+    }
+  }
+}
+
+// good
+.one {
+  .two {
+    .three {}
+  }
+}
+
+```
+
 
 
 
