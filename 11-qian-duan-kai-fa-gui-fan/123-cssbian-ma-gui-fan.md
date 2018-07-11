@@ -1,3 +1,7 @@
+## 规范主
+
+## 
+
 * 使用2个空格来缩进，可以配置编辑器让tab变为2个空格以方便开发。
 
 ```css
@@ -203,7 +207,7 @@ div.error {}
   /* Color */
   background: #000;
   color: #fff
-  
+
   /* Text */
   font-family: sans-serif;
   font-size: 16px;
@@ -245,7 +249,7 @@ div.error {}
 }
 ```
 
-* css规则中使用单引号，url()里面不加引号。
+* css规则中使用单引号，url\(\)里面不加引号。
 
 ```css
 // bad
@@ -289,10 +293,7 @@ html {
     .three {}
   }
 }
-
 ```
-
-
 
 
 
