@@ -3,12 +3,12 @@
 * 使用2个空格来缩进，可以配置编辑器让tab变为2个空格以方便开发。
 
 ```css
-// bad
+/* bad */
 .one {
 color: red;
 }
 
-// good
+/* good */
 .one {
   color: red;
 }
@@ -17,12 +17,12 @@ color: red;
 * 冒号后面需要一个空格。
 
 ```css
-// bad
+/* bad */
 .one {
   color:red;
 }
 
-// good
+/* good */
 .one {
   color: red;
 }
@@ -31,12 +31,12 @@ color: red;
 * 所有属性值后面都需要用分号结尾。
 
 ```css
-// bad
+/* bad */
 .one {
   color: red
 }
 
-// good
+/* good */
 .one {
   color: red;
 }
@@ -45,75 +45,67 @@ color: red;
 * 如过多个class共享同一个css规则，每一个class单独占一行。
 
 ```css
-// bad
-.one, .two, .three {
-  // ...
-}
+/* bad */
+.one, .two, .three {}
 
-// good
+/* good */
 .one,
 .two,
-.three {
-  // ...
-}
+.three {}
 ```
 
 * "{"跟在选择器后面，而且它前面必须要有一个空格。
 
 ```css
-// bad
-.one{
-  // ...
-}
+/* bad */
+.one{}
 
-// good
-.one {
-  // ...
-}
+/* good */
+.one {}
 ```
 
 * "}"必须单独占一行。
 
 ```css
-// bad
+/* bad */
 .one {
-  // ... }
+  /* ... */ }
 
-// good
+/* good */
 .one {
-  // ...
+  /* ... */
 }
 ```
 
 * 每一个css规则后面都需要一个空行来间隔。
 
 ```css
-// bad
+/* bad */
 .one {
-  // ... 
+  /* ... */ 
 }
 .two {
-  // ...
+  /* ... */
 }
 
-// good
+/* good */
 .one {
-  // ...
+  /* ... */
 }
 
 .two {
-  // ...
+  /* ... */
 }
 ```
 
 * css的命名在有语义的基础上越简洁越好。
 
 ```css
-// bad
+/* bad */
 .navigation {}
 .atr {}
 
-// good
+/* good */
 .nav {}
 .author {}
 ```
@@ -121,11 +113,11 @@ color: red;
 * 避免在id或者class前面使用type选择器, 这会引起性能问题。
 
 ```css
-// bad
+/* bad */
 ul#example {}
 div.error {}
 
-// good
+/* good */
 #example {}
 .error {}
 ```
@@ -133,7 +125,7 @@ div.error {}
 * 使用css简写属性。
 
 ```css
-// bad
+/* bad */
 .bad {
   font-family: palatino, georgia, serif;
   font-size: 100%;
@@ -144,7 +136,7 @@ div.error {}
   padding-top: 0;
 }
 
-// good
+/* good */
 .good {
   font: 100%/1.6 palatino, georgia, serif;
   padding: 0 1em 2em;
@@ -154,12 +146,12 @@ div.error {}
 * 没有border，不要使用none，应该用0.
 
 ```css
-// bad
+/* bad */
 .one {
   border: none; 
 }
 
-// good
+/* good */
 .one {
   border: 0;
 }
@@ -203,13 +195,13 @@ div.error {}
 * 长度如果为0，则省略单位。
 
 ```css
-// bad
+/* bad */
 .bad {
   margin: 0px;
   padding: 0px;
 }
 
-// good
+/* good */
 .good {
   margin: 0;
   padding: 0;
@@ -219,12 +211,12 @@ div.error {}
 * 长度为零点几的时候，省略0。
 
 ```css
-// bad
+/* bad */
 .bad {
   font-size: 0.5rem;
 }
 
-// good
+/* good */
 .good {
   font-size: .5rem;
 }
@@ -233,14 +225,14 @@ div.error {}
 * css规则中使用单引号，url\(\)里面不加引号。
 
 ```css
-// bad
+/* bad */
 @import url("https://www.google.com/css/maia.css");
 
 html {
   font-family: "open sans", arial, sans-serif;
 }
 
-// good
+/* good */
 @import url(https://www.google.com/css/maia.css);
 
 html {
@@ -251,15 +243,15 @@ html {
 * 无论css还是scss，嵌套都不能超过3层。
 
 ```css
-// bad
+/* bad */
 .one .two .three .four {}
 
-// good
+/* good */
 .one .two .three {}
 ```
 
 ```css
-// bad
+/* bad */
 .one {
   .two {
     .three {
@@ -268,7 +260,7 @@ html {
   }
 }
 
-// good
+/* good */
 .one {
   .two {
     .three {}
@@ -276,11 +268,7 @@ html {
 }
 ```
 
-
-
-
-
-使用BEM来命名
+* 推荐使用BEM方式来命名 请查看<http://getbem.com/>
 
 
 

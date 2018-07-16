@@ -205,174 +205,151 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <ul>
+                                <h2 id="&#x7ED3;&#x5408;&#x4E86;&#x8C37;&#x6B4C;&#xFF0C;airbnb&#x548C;dropbox&#x7684;css-guide&#x3002;">&#x7ED3;&#x5408;&#x4E86;&#x8C37;&#x6B4C;&#xFF0C;airbnb&#x548C;dropbox&#x7684;css-guide&#x3002;</h2>
+<ul>
 <li>&#x4F7F;&#x7528;2&#x4E2A;&#x7A7A;&#x683C;&#x6765;&#x7F29;&#x8FDB;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x7F16;&#x8F91;&#x5668;&#x8BA9;tab&#x53D8;&#x4E3A;2&#x4E2A;&#x7A7A;&#x683C;&#x4EE5;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one {
-color: red;
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> {
+<span class="hljs-attribute">color</span>: red;
 }
 
-// good
-.one {
-  color: red;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">color</span>: red;
 }
 </code></pre>
 <ul>
 <li>&#x5192;&#x53F7;&#x540E;&#x9762;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one {
-  color:red;
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">color</span>:red;
 }
 
-// good
-.one {
-  color: red;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">color</span>: red;
 }
 </code></pre>
 <ul>
 <li>&#x6240;&#x6709;&#x5C5E;&#x6027;&#x503C;&#x540E;&#x9762;&#x90FD;&#x9700;&#x8981;&#x7528;&#x5206;&#x53F7;&#x7ED3;&#x5C3E;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one {
-  color: red
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">color</span>: red
 }
 
-// good
-.one {
-  color: red;
-}
-</code></pre>
-<ul>
-<li>class&#x547D;&#x540D;&#x4F7F;&#x7528;&quot;-&quot;&#xFF0C; &#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x3002;</li>
-</ul>
-<pre><code class="lang-css">// bad
-.myBook {
-  color: red;
-}
-.my_book {
-  color: red;
-}
-
-// good
-.my-book {
-  color: red;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">color</span>: red;
 }
 </code></pre>
 <ul>
 <li>&#x5982;&#x8FC7;&#x591A;&#x4E2A;class&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;css&#x89C4;&#x5219;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;class&#x5355;&#x72EC;&#x5360;&#x4E00;&#x884C;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one, .two, .three {
-  // ...
-}
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span>, <span class="hljs-selector-class">.two</span>, <span class="hljs-selector-class">.three</span> {}
 
-// good
-.one,
-.two,
-.three {
-  // ...
-}
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span>,
+<span class="hljs-selector-class">.two</span>,
+<span class="hljs-selector-class">.three</span> {}
 </code></pre>
 <ul>
 <li>&quot;{&quot;&#x8DDF;&#x5728;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x524D;&#x9762;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one{
-  // ...
-}
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span>{}
 
-// good
-.one {
-  // ...
-}
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {}
 </code></pre>
 <ul>
 <li>&quot;}&quot;&#x5FC5;&#x987B;&#x5355;&#x72EC;&#x5360;&#x4E00;&#x884C;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one {
-  // ... }
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-comment">/* ... */</span> }
 
-// good
-.one {
-  // ...
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-comment">/* ... */</span>
 }
 </code></pre>
 <ul>
 <li>&#x6BCF;&#x4E00;&#x4E2A;css&#x89C4;&#x5219;&#x540E;&#x9762;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7A7A;&#x884C;&#x6765;&#x95F4;&#x9694;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one {
-  // ... 
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-comment">/* ... */</span> 
 }
-.two {
-  // ...
-}
-
-// good
-.one {
-  // ...
+<span class="hljs-selector-class">.two</span> {
+  <span class="hljs-comment">/* ... */</span>
 }
 
-.two {
-  // ...
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-comment">/* ... */</span>
+}
+
+<span class="hljs-selector-class">.two</span> {
+  <span class="hljs-comment">/* ... */</span>
 }
 </code></pre>
 <ul>
 <li>css&#x7684;&#x547D;&#x540D;&#x5728;&#x6709;&#x8BED;&#x4E49;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8D8A;&#x7B80;&#x6D01;&#x8D8A;&#x597D;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.navigation {}
-.atr {}
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.navigation</span> {}
+<span class="hljs-selector-class">.atr</span> {}
 
-// good
-.nav {}
-.author {}
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.nav</span> {}
+<span class="hljs-selector-class">.author</span> {}
 </code></pre>
 <ul>
 <li>&#x907F;&#x514D;&#x5728;id&#x6216;&#x8005;class&#x524D;&#x9762;&#x4F7F;&#x7528;type&#x9009;&#x62E9;&#x5668;, &#x8FD9;&#x4F1A;&#x5F15;&#x8D77;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-ul#example {}
-div.error {}
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-tag">ul</span><span class="hljs-selector-id">#example</span> {}
+<span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.error</span> {}
 
-// good
-#example {}
-.error {}
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-id">#example</span> {}
+<span class="hljs-selector-class">.error</span> {}
 </code></pre>
 <ul>
 <li>&#x4F7F;&#x7528;css&#x7B80;&#x5199;&#x5C5E;&#x6027;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.bad {
-  font-family: palatino, georgia, serif;
-  font-size: 100%;
-  line-height: 1.6;
-  padding-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0;
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.bad</span> {
+  <span class="hljs-attribute">font-family</span>: palatino, georgia, serif;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.6</span>;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">2em</span>;
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">1em</span>;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">1em</span>;
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
 }
 
-// good
-.good {
-  font: 100%/1.6 palatino, georgia, serif;
-  padding: 0 1em 2em;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.good</span> {
+  <span class="hljs-attribute">font</span>: <span class="hljs-number">100%</span>/<span class="hljs-number">1.6</span> palatino, georgia, serif;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">1em</span> <span class="hljs-number">2em</span>;
 }
 </code></pre>
 <ul>
 <li>&#x6CA1;&#x6709;border&#xFF0C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;none&#xFF0C;&#x5E94;&#x8BE5;&#x7528;0.</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one {
-  border: none; 
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">border</span>: none; 
 }
 
-// good
-.one {
-  border: 0;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
 }
 </code></pre>
 <ul>
@@ -412,58 +389,58 @@ div.error {}
 <ul>
 <li>&#x957F;&#x5EA6;&#x5982;&#x679C;&#x4E3A;0&#xFF0C;&#x5219;&#x7701;&#x7565;&#x5355;&#x4F4D;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.bad {
-  margin: 0px;
-  padding: 0px;
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.bad</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
 }
 
-// good
-.good {
-  margin: 0;
-  padding: 0;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.good</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
 }
 </code></pre>
 <ul>
 <li>&#x957F;&#x5EA6;&#x4E3A;&#x96F6;&#x70B9;&#x51E0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7701;&#x7565;0&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.bad {
-  font-size: 0.5rem;
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.bad</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.5rem</span>;
 }
 
-// good
-.good {
-  font-size: .5rem;
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.good</span> {
+  <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">5rem</span>;
 }
 </code></pre>
 <ul>
 <li>css&#x89C4;&#x5219;&#x4E2D;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;&#xFF0C;url()&#x91CC;&#x9762;&#x4E0D;&#x52A0;&#x5F15;&#x53F7;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-@import url(&quot;https://www.google.com/css/maia.css&quot;);
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+@<span class="hljs-keyword">import</span> url(<span class="hljs-string">&quot;https://www.google.com/css/maia.css&quot;</span>);
 
-html {
-  font-family: &quot;open sans&quot;, arial, sans-serif;
+<span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;open sans&quot;</span>, arial, sans-serif;
 }
 
-// good
-@import url(https://www.google.com/css/maia.css);
+<span class="hljs-comment">/* good */</span>
+@<span class="hljs-keyword">import</span> url(https://www.google.com/css/maia.css);
 
-html {
-  font-family: &apos;open sans&apos;, arial, sans-serif;
+<span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;open sans&apos;</span>, arial, sans-serif;
 }
 </code></pre>
 <ul>
 <li>&#x65E0;&#x8BBA;css&#x8FD8;&#x662F;scss&#xFF0C;&#x5D4C;&#x5957;&#x90FD;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;3&#x5C42;&#x3002;</li>
 </ul>
-<pre><code class="lang-css">// bad
-.one .two .three .four {}
+<pre><code class="lang-css"><span class="hljs-comment">/* bad */</span>
+<span class="hljs-selector-class">.one</span> <span class="hljs-selector-class">.two</span> <span class="hljs-selector-class">.three</span> <span class="hljs-selector-class">.four</span> {}
 
-// good
-.one .two .three {}
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.one</span> <span class="hljs-selector-class">.two</span> <span class="hljs-selector-class">.three</span> {}
 </code></pre>
-<pre><code class="lang-css">// bad
+<pre><code class="lang-css">/* bad */
 .one {
   .two {
     .three {
@@ -472,13 +449,16 @@ html {
   }
 }
 
-// good
+/* good */
 .one {
   .two {
     .three {}
   }
 }
 </code></pre>
+<ul>
+<li>&#x63A8;&#x8350;&#x4F7F;&#x7528;BEM&#x65B9;&#x5F0F;&#x6765;&#x547D;&#x540D; &#x8BF7;&#x67E5;&#x770B;<a href="http://getbem.com/" target="_blank">http://getbem.com/</a></li>
+</ul>
 
                                 
                                 </section>
@@ -518,7 +498,7 @@ html {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2.3 css编码规范","level":"1.2.3","depth":2,"previous":{"title":"1.2.2 React编码规范","level":"1.2.2","depth":2,"path":"11-qian-duan-kai-fa-gui-fan/122-reactbian-ma-gui-fan.md","ref":"11-qian-duan-kai-fa-gui-fan/122-reactbian-ma-gui-fan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11-qian-duan-kai-fa-gui-fan/123-cssbian-ma-gui-fan.md","mtime":"2018-07-09T02:50:00.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-09T02:51:36.217Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2.3 css编码规范","level":"1.2.3","depth":2,"previous":{"title":"1.2.2 React编码规范","level":"1.2.2","depth":2,"path":"11-qian-duan-kai-fa-gui-fan/122-reactbian-ma-gui-fan.md","ref":"11-qian-duan-kai-fa-gui-fan/122-reactbian-ma-gui-fan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11-qian-duan-kai-fa-gui-fan/123-cssbian-ma-gui-fan.md","mtime":"2018-07-16T06:59:27.568Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-16T06:59:44.961Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
