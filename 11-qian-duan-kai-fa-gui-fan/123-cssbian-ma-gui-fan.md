@@ -1,6 +1,4 @@
-## 规范主
-
-## 
+## 结合了谷歌，airbnb和dropbox的css-guide。
 
 * 使用2个空格来缩进，可以配置编辑器让tab变为2个空格以方便开发。
 
@@ -40,23 +38,6 @@ color: red;
 
 // good
 .one {
-  color: red;
-}
-```
-
-* class命名使用"-"， 不要使用驼峰或下划线。
-
-```css
-// bad
-.myBook {
-  color: red;
-}
-.my_book {
-  color: red;
-}
-
-// good
-.my-book {
   color: red;
 }
 ```
@@ -294,6 +275,12 @@ html {
   }
 }
 ```
+
+
+
+
+
+使用BEM来命名
 
 
 
